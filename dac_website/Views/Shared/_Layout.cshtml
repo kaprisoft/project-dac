@@ -2,41 +2,31 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/Site.css" />
+    <link rel="stylesheet" href="~/Content/w3pro.css" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    <nav class="w3-bar">
+        <a href="/Index" class="w3-bar-item w3-quarter">
+            <img src="~/Content/logo.png" style="width: 45%;" />
+        </a>
+        <a href="~/Views/Home/About.cshtml" class="w3-bar-item w3-button">ABOUT US</a>
+        <a href="~/Views/Home/Services.cshtml" class="w3-bar-item w3-button">SERVICES</a>
+        <a href="~/Views/Home/Project.cshtml" class="w3-bar-item w3-button">PROJECTS</a>
+        <a href="~/Views/Home/Contact.cshtml" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+    @RenderBody()
+    <footer class="panel-footer">
+        <p>Thanks for taking a look at our site, make sure to consider us for your next big project!</p>
+        <br />
+        <p>Copyright &copy; 2018 - DAC Construction</p>
+    </footer>
+    @Scripts.Render("~/Scripts/jquery-3.3.1.min.js");
+    @Scripts.Render("~/Scripts/bootstrap.min.js");
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false);
 </body>
 </html>
