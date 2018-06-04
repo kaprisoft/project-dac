@@ -1,17 +1,36 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<h1>@ViewBag.Message</h1>
+<hr />
+<div>
+    <form id="form" method="post" target="_blank" action="~/Views/Home/Contact.cshtml" onfocus="this.value=''">
+        <div class="inp_h">
+            <input required type="text" name="firstname" value="First name:" class="inp_2" onfocus="this.value=''" />
+        </div>
+        <div class="inp_h">
+            <input required type="text" name="lastname" value="Last name:" class="inp_2" onfocus="this.value=''" />
+        </div>
+        <div class="inp_h">
+            <input required type="email" name="email" value="Your email address:" class="inp_2" onfocus="this.value=''" />
+        </div>
+        <div>
+            <textarea required name="message" class="inp_3" rows="30" cols="30" onfocus="this.value=''">
+                Message:
+            </textarea>
+        </div>
+        <div>
+            <a href="#" onclick="document.getElementById('form').reset()">
+                <img src="~/Content/clear.jpg" style="border:0px none" />
+            </a>
+        </div>
+        <img src="~/Content/border.gif" style="border: 12px 0 0 0" />
+        <div>
+            <a href="#" onclick="document.getElementById('form').submit()">
+                <img src="~/Content/submite.jpg" style="border: 0px none" />
+            </a>
+        </div>
+    </form>
+</div>
