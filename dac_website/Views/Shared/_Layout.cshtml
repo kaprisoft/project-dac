@@ -8,21 +8,11 @@
     <link rel="stylesheet" href="~/Content/Site.css" />
     <link rel="stylesheet" href="~/Content/w3pro.css" />
     <link rel="stylesheet" href="~/Content/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css" />
-    <script src="~/Scripts/jquery-3.3.1.min.js">
-        /*jQuery code goes here*/
-    </script>
-    <script src="~/Scripts/bootstrap.bundle.min.js">
-        /*Bootstrap code goes here*/
-    </script>
-    <script src="~/Scripts/modernizr-2.8.3.js">
-        /*Modernizr code goes here*/
-    </script>
-    <script src="~/Scripts/popper.min.js">
-        /*Popper.js code goes here*/
-    </script>
-    <script src="~/Scripts/popper-utils.min.js">
-        /*Popper Utils code goes here*/
-    </script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/popper-utils.min.js"></script>
 </head>
 <body>
     <header>
@@ -43,16 +33,16 @@
         </p>
     </header>
     <nav class="w3-bar">
-        <a href="/Index" class="w3-bar-item w3-quarter">
-            <img src="~/Content/logo.png" style="width: 45%;" />
+        <a href="~/Views/Home/Index.cshtml" class="w3-bar-item w3-quarter">
+            <i class="fa fa-superpowers"></i>
         </a>
-        <a href="~/Views/Home/About" class="w3-bar-item w3-button">ABOUT US</a>
-        <a href="~/Views/Home/Services" class="w3-bar-item w3-button">SERVICES</a>
-        <a href="~/Views/Home/Projects" class="w3-bar-item w3-button">PROJECTS</a>
-        <a href="~/Views/Home/Contact" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="~/Views/Home/About.cshtml" class="w3-bar-item w3-button">ABOUT US</a>
+        <a href="~/Views/Home/Services.cshtml" class="w3-bar-item w3-button">SERVICES</a>
+        <a href="~/Views/Home/Projects.cshtml" class="w3-bar-item w3-button">PROJECTS</a>
+        <a href="~/Views/Home/Contact.cshtml" class="w3-bar-item w3-button">CONTACT</a>
     </nav>
     @RenderBody()
-    <footer class="panel-footer">
+    <footer>
         <p>Thanks for taking a look at our site, make sure to consider us for your next big project!</p>
         <br />
         <p>Copyright &copy; 2018 - DAC Construction</p>

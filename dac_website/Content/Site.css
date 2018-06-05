@@ -39,6 +39,8 @@
 /*Color definitions*/
 /*Tag and Class style definitions*/
 body {
+  align-content: center;
+  text-align: center;
   padding-top: 0px;
   padding-bottom: 20px;
 }

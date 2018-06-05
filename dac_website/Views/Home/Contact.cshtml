@@ -1,4 +1,5 @@
-﻿@{
+﻿@model dynamic
+@{
     ViewBag.Title = "Contact Us";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -6,7 +7,7 @@
 <h1>@ViewBag.Message</h1>
 <hr />
 <div>
-    <form id="form" method="post" target="_blank" action="~/Views/Home/Contact.cshtml" onfocus="this.value=''">
+    <form id="form" method="post" target="_blank" action="Contact.cshtml" onfocus="this.value=''">
         <div class="inp_h">
             <input required type="text" name="firstname" value="First name:" class="inp_2" onfocus="this.value=''" />
         </div>
@@ -26,10 +27,10 @@
                 <img src="~/Content/clear.jpg" style="border:0px none" />
             </a>
         </div>
-        <img src="~/Content/border.gif" style="border: 12px 0 0 0" />
+        <img src="~/Content/border.gif" style="border: 12px" />
         <div>
             <a href="#" onclick="document.getElementById('form').submit()">
-                <img src="~/Content/submite.jpg" style="border: 0px none" />
+                <img src="~/Content/submit.jpg" style="border: 0px none" />
             </a>
         </div>
     </form>

@@ -195,6 +195,7 @@
     <Content Include="Content\fontawesome-free-5.0.13\web-fonts-with-css\webfonts\fa-brands-400.svg" />
     <Content Include="Content\fontawesome-free-5.0.13\web-fonts-with-css\webfonts\fa-regular-400.svg" />
     <Content Include="Content\fontawesome-free-5.0.13\web-fonts-with-css\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\Site.css" />
     <Content Include="Content\w3pro.css" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
@@ -290,6 +291,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
