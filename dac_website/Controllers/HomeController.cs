@@ -22,5 +22,19 @@ namespace dac_website.Controllers
 
             return View();
         }
+
+        public ActionResult Services()
+        {
+            ViewBag.Message = "The Services We Currently Offer";
+
+            return View();
+        }
+
+        public ActionResult Projects()
+        {
+            ViewBag.Message = "Current and Past Projects";
+
+            return View();
+        }
     }
 }
