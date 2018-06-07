@@ -1,15 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("dac_website")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("DACCWebsite")]
+[assembly: AssemblyDescription("DAC Website for information and service requests")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("dac_website")]
+[assembly: AssemblyCompany("DAC Construction")]
+[assembly: AssemblyProduct("DACCW")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -1,51 +1,103 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/Content/Site.css" />
-    <link rel="stylesheet" href="~/Content/w3pro.css" />
-    <link rel="stylesheet" href="~/Content/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css" />
+    <meta name="keywords" content="DAC, Grand Rapids, Michigan, Midwest, Construction, Contracting, Commercial, Real Estate, Development"/>
+    <link media="screen" rel="stylesheet" href="~/Content/bootstrap.min.css"/>
+    <link media="screen" rel="stylesheet" href="~/Content/Site.css"/>
+    <link media="screen" rel="stylesheet" href="~/Content/w3pro.css"/>
+    <link media="screen" rel="stylesheet" href="~/Content/normalize.css"/>
+    <link media="screen" rel="stylesheet" href="~/Content/animate.min.css"/>
+    <link media="screen" rel="stylesheet" href="~/Content/bower.css"/>
+    <link media="screen" rel="stylesheet" href="~/Content/gallery.css"/>
+    <link media="screen" rel="stylesheet" href="~/Content/global.css"/>
+    <link media="screen" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="http://orionbuilt.com/assets/fav/mstile-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>
     <script src="~/Scripts/bootstrap.bundle.min.js"></script>
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
     <script src="~/Scripts/popper.min.js"></script>
     <script src="~/Scripts/popper-utils.min.js"></script>
+    <style type="text/css"></style>
 </head>
-<body>
-    <header>
-        <p style="font-size: 11px; font-family: Raleway">
-            <span>
-                <i class="fa fa-facebook-square"></i> Facebook page: <a href="https://www.facebook.com/dacconstruction">DAC Construction Co.</a>
-            </span>
-        </p>
-        <p style="font-size: 11px; font-family: Raleway">
-            <span>
-                <i class="fa fa-twitter-square"></i> Twitter page: <a href="https://www.twitter.com/dacconstruction">DAC Construction</a>
-            </span>
-        </p>
-        <p style="font-size: 11px; font-family: Raleway">
-            <span>
-                <i class="fa fa-envelope"></i> Email Address: <a href="mailto://info@dacbuilt.com">info@dacbuilt.com</a>
-            </span>
-        </p>
-    </header>
-    <nav class="w3-bar">
-        <a href="~/Views/Home/Index.cshtml" class="w3-bar-item w3-quarter">
-            <i class="fa fa-superpowers"></i>
-        </a>
-        <a href="~/Views/Home/About.cshtml" class="w3-bar-item w3-button">ABOUT US</a>
-        <a href="~/Views/Home/Services.cshtml" class="w3-bar-item w3-button">SERVICES</a>
-        <a href="~/Views/Home/Projects.cshtml" class="w3-bar-item w3-button">PROJECTS</a>
-        <a href="~/Views/Home/Contact.cshtml" class="w3-bar-item w3-button">CONTACT</a>
-    </nav>
-    @RenderBody()
-    <footer>
-        <p>Thanks for taking a look at our site, make sure to consider us for your next big project!</p>
-        <br />
-        <p>Copyright &copy; 2018 - DAC Construction</p>
-    </footer>
+<body class="home">
+<div id="top-nav">
+    <div class="container">
+        <div class="row">
+            <div
+                class="col-xs-6 col-sm-3 col-md-2 col-lg-2 col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-3 hidden-xs">
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone-square"></i> Main #PhoneNumber here!</li>
+                    <li>
+                        <i class="fa fa-paper-plane"></i>
+                        <a
+                            href="mailto:info@dacbuilt.com">
+                            info@dacbuilt.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fa fa-twitter"></i>
+                        <a href="https://www.twitter.com/dacbuilt">Twitter</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-facebook"></i>
+                        <a href="https://www.facebook.com/dacbuilt">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 hidden-xs">
+                <form action="http://dacbuilt.com/search/results">
+                    <input type="search" name="q" placeholder="Search">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<nav id="main-nav" class="w3-bar">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="" href="/Views/Home/Index.cshtml">
+                <img src="/Views/Home/logo.png" alt="Logo" height="70"/>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="full-nav">
+            <ul class="nav navbar-nav w3-bar-item w3-right-align">
+                <li>
+                    <a href="/Views/Home/About.cshtml" class="hvr-sweep-to-top w3-bar-item w3-button">About Us</a>
+                </li>
+                <li>
+                    <a href="/Views/Home/Services.cshtml" class="hvr-sweep-to-top w3-bar-item w3-button">Services</a>
+                </li>
+                <li>
+                    <a href="/Views/Home/Projects.cshtml" class="hvr-sweep-to-top w3-bar-item w3-button">Projects</a>
+                </li>
+                <li>
+                    <a href="/Views/Home/Contact.cshtml" class="hvr-sweep-to-top w3-bar-item w3-button">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+@RenderBody()
+<footer id="main">
+    <p>Thanks for taking a look at our site, make sure to consider us for your next big project!</p>
+    <br/>
+    <p>Copyright &copy; 2018 - DAC Construction</p>
+</footer>
+
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyB2MkyPgSzWPpXEXUsHSGNzw3hseFFIbaA"></script>
+<script type="text/javascript" src="http://orionbuilt.com/cpresources/smartmap/js/smartmap.js"></script>
 </body>
 </html>
