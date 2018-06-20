@@ -1,12 +1,29 @@
-<div id="top-nav" class="row">
-
-</div>
-<div class="navbar navbar-expand-sm bg-light justify-content-center">
-    <a href="/index.php" class="navbar-brand">
-        <img src="/logo-mid.png" alt="dac logo">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="/" alt="DAC LOGO" />
     </a>
-    <a class="nav nav-item" href="/about/index.php">About Us</a>
-    <a class="nav nav-item" href="/contact/index.php">Contact Us</a>
-    <a class="nav nav-item" href="/projects/index.php">Projects</a>
-    <a class="nav nav-item" href="/services/index.php">Services</a>
-</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link btn" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn" href="#">Contact</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
