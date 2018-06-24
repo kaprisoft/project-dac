@@ -1,6 +1,6 @@
 <!--CSS Imports-->
 <link media="screen" rel="stylesheet" type="text/css" href="/css/w3pro.css" />
-<link media="screen" rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+<link media="screen" rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
 <!--Meta Tags-->
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />

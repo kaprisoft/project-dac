@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6586bc4f-71f7-4b7f-9bc2-69854f4c73d3" name="FTPserv" url="http://ftps.justplaylabs.xyz">
+        <fileTransfer host="ftps.justplaylabs.xyz" port="21" rootFolder="/dac">
+          <advancedOptions>
+            <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" forceListCommand="true" keepAliveCommand="LIST" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
